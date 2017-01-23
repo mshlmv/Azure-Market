@@ -2,7 +2,7 @@
 
 body
   font-family: "Segoe UI", "SegoeUIRegular", "Helvetica Neue", Arial, sans-serif
-  font-size: 16px
+  font-size: 18px
   font-style: normal
   font-variant: normal
   font-weight: 400
@@ -15,3 +15,7 @@ body
 
 h1
   margin: 0
+  font-family: "SegoeUILight", Arial, sans-serif
+  font-size: $h1-size-phone
+  +mq-size(desktop)
+    font-size: $h1-size-desktop

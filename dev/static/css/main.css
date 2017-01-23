@@ -212,7 +212,7 @@ blockquote {
 }
 body {
   font-family: "Segoe UI", "SegoeUIRegular", "Helvetica Neue", Arial, sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   font-style: normal;
   font-variant: normal;
   font-weight: 400;
@@ -225,6 +225,13 @@ body {
 }
 h1 {
   margin: 0;
+  font-family: "SegoeUILight", Arial, sans-serif;
+  font-size: 34px;
+}
+@media (min-width: 992px) {
+  h1 {
+    font-size: 48px;
+  }
 }
 .topbar {
   background-color: #fff;
@@ -371,14 +378,7 @@ h1 {
   }
 }
 .favor h1 {
-  font-family: "SegoeUILight";
-  font-size: 34px;
   text-align: center;
-}
-@media (min-width: 992px) {
-  .favor h1 {
-    font-size: 48px;
-  }
 }
 .favor__grid {
   display: -webkit-box;
@@ -455,6 +455,30 @@ h1 {
   filter: url("data:image/svg+xml;utf8,&lt;svg xmlns=\'http://www.w3.org/2000/svg\'&gt;&lt;filter id=\'grayscale\'&gt;&lt;feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/&gt;&lt;/filter&gt;&lt;/svg&gt;#grayscale");
   -webkit-filter: grayscale(0);
           filter: grayscale(0);
+}
+.channel {
+  background-color: #0078d7;
+}
+.channel__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px 0 40px;
+}
+.channel__image {
+  width: 165px;
+  height: 100px;
+}
+.channel__text {
+  margin-left: 45px;
+  color: #fff;
+  font-family: "SegoeUISemiLight", Arial, sans-serif;
+}
+.channel__text span {
+  color: #7bb63c;
 }
 
 /*# sourceMappingURL=main.css.map */
