@@ -3,16 +3,26 @@
 
 .channel__inner
   display: flex
+  flex-flow: column
   align-items: center
   padding: 30px 0 40px
+  +mq-size(tablet)
+    flex-flow: row
 
 .channel__image
   width: 165px
   height: 100px
 
 .channel__text
-  margin-left: 45px
+  margin-top: 25px
+  text-align: center
   color: #fff
   font-family: "SegoeUISemiLight", Arial, sans-serif
-  span
+  a
     color: $acent-color
+    text-decoration: none
+    &:hover
+      text-decoration: underline
+  +mq-size(tablet)
+    margin-left: 45px
+    text-align: left

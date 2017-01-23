@@ -1,0 +1,9 @@
+mixin Res(data)
+  .resources
+    .resources__inner.row
+      h1 Полезные ресурсы
+      ul.resources__list
+        for item in data['resources']
+          li.list__item
+            a.list__link(href="#")!= item.restxt
+  .sex

@@ -210,6 +210,14 @@ blockquote {
   font-weight: normal;
   font-style: normal;
 }
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
 body {
   font-family: "Segoe UI", "SegoeUIRegular", "Helvetica Neue", Arial, sans-serif;
   font-size: 18px;
@@ -463,22 +471,97 @@ h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-flow: column;
+      flex-flow: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   padding: 30px 0 40px;
+}
+@media (min-width: 768px) {
+  .channel__inner {
+    -ms-flex-flow: row;
+        flex-flow: row;
+  }
 }
 .channel__image {
   width: 165px;
   height: 100px;
 }
 .channel__text {
-  margin-left: 45px;
+  margin-top: 25px;
+  text-align: center;
   color: #fff;
   font-family: "SegoeUISemiLight", Arial, sans-serif;
 }
-.channel__text span {
+.channel__text a {
   color: #7bb63c;
+  text-decoration: none;
+}
+.channel__text a:hover {
+  text-decoration: underline;
+}
+@media (min-width: 768px) {
+  .channel__text {
+    margin-left: 45px;
+    text-align: left;
+  }
+}
+.resources {
+  margin-top: 50px;
+}
+.resources h1 {
+  margin-left: 20px;
+}
+@media (min-width: 768px) {
+  .resources h1 {
+    margin-left: 0;
+  }
+}
+.resources__list {
+  list-style: none;
+  margin: 50px 0 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+}
+.list__item {
+  margin: 0 20px 25px;
+  border: 2px solid #0078d7;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+.list__item:hover {
+  background-color: #7bb63c;
+  border-color: #7bb63c;
+}
+.list__item:hover > .list__link {
+  color: #fff;
+}
+@media (min-width: 992px) {
+  .list__item {
+    margin-left: 0;
+  }
+  .list__item:nth-child(3n-1) {
+    margin-right: 0;
+  }
+}
+.list__link {
+  font-size: 16px;
+  display: block;
+  padding: 15px 20px;
+  text-decoration: none;
+  color: #0078d7;
+  font-family: "SegoeUISemiBold", Arial, sans-serif;
+}
+@media (min-width: 768px) {
+  .list__link {
+    font-size: 18px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
