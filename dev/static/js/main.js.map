@@ -1,1 +1,1 @@
-{"version":3,"sources":["markup/comps/1_Topbar/Topbar.js","markup/comps/2_Banner/Banner.js","markup/comps/3_Favor/Favor.js","markup/comps/4_Channel/Channel.js","markup/comps/Res/Res.js"],"names":[],"mappings":"AAAA;AACA;ACDA;AACA;ACDA;AACA;ACDA;AACA;ACDA;AACA","file":"main.js","sourcesContent":["console.log(\"Sex~\");\n","\n","\n","\n","\n"]}
+{"version":3,"sources":["markup/comps/5_Res/Res.js","markup/comps/6_Howbuy/Howbuy.js"],"names":[],"mappings":"AAAA;AACA;ACDA;AACA","file":"main.js","sourcesContent":["\n","\n"]}

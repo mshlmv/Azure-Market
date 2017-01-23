@@ -63,6 +63,8 @@
 }
 ,
 
+'Howbuy': {},
+
 __iconsData: {
     
         'fb': {
