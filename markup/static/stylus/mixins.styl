@@ -1,27 +1,44 @@
 // Mixins.
 
 m-nl()
-    margin 0
-    padding 0
-    text-indent 0
-    list-style none
-    list-style-position outside
+  margin 0
+  padding 0
+  text-indent 0
+  list-style none
+  list-style-position outside
 
 m-cf()
-    &:before, &:after
-        display table
-        content ""
+  &:before, &:after
+    display table
+    content ""
 
-    &:after
-        clear both
+  &:after
+    clear both
 
-    .lt-ie8 &
-        zoom 1
+  .lt-ie8 &
+    zoom 1
 
 
 m-blocks-justify()
-    text-align justify
-    text-justify newspaper
+  text-align justify
+  text-justify newspaper
 
 
 // You can add your own mixins here:
+
+mq-size($size)
+  if $size == phone-only
+    @media (max-width: 599px)
+      {block}
+  else if $size == tablet-portrait-up
+    @media (min-width: 600px)
+      {block}
+  else if $size == tablet-landscape-up
+    @media (min-width: 900px)
+      {block}
+  else if $size == desktop-up
+    @media (min-width: 1200px)
+      {block}
+  else if $size == big-desktop-up
+    @media (min-width: 1800px)
+      {block}

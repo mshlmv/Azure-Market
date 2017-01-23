@@ -227,6 +227,11 @@ font-size: 16px {
   height: 70px;
   box-shadow: inset 0px -5px 0px 0px #eee;
 }
+@media (max-width: 599px) {
+  .topbar {
+    padding: 0 20px;
+  }
+}
 .topbar__inner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -248,8 +253,25 @@ font-size: 16px {
 .share__text {
   padding-right: 15px;
 }
+@media (max-width: 599px) {
+  .share__text {
+    display: none;
+  }
+}
 .share__link {
   text-decoration: none;
+}
+@media (max-width: 599px) {
+  .icon__fb,
+  .icon__vk {
+    width: 28px;
+    height: 28px;
+  }
+}
+@media (max-width: 599px) {
+  .icon__fb {
+    padding-right: 10px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
