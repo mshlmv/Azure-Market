@@ -1,0 +1,255 @@
+/* normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+html {
+  font-family: sans-serif /* 1 */;
+  -ms-text-size-adjust: 100% /* 2 */;
+  -webkit-text-size-adjust: 100% /* 2 */;
+}
+body {
+  margin: 0;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+audio,
+canvas,
+progress,
+video {
+  display: inline-block /* 1 */;
+  vertical-align: baseline /* 2 */;
+}
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+[hidden],
+template {
+  display: none;
+}
+a {
+  background-color: transparent;
+}
+a:active,
+a:hover {
+  outline: 0;
+}
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+b,
+strong {
+  font-weight: bold;
+}
+dfn {
+  font-style: italic;
+}
+mark {
+  background: #ff0;
+  color: #000;
+}
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+img {
+  border: 0;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+figure {
+  margin: 0;
+}
+hr {
+  box-sizing: content-box;
+  height: 0;
+}
+pre {
+  overflow: auto;
+}
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit /* 1 */;
+  font: inherit /* 2 */;
+  margin: 0 /* 3 */;
+}
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+button {
+  overflow: visible;
+}
+button,
+select {
+  text-transform: none;
+}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button /* 2 */;
+  cursor: pointer /* 3 */;
+}
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+input {
+  line-height: normal;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box /* 1 */;
+  padding: 0 /* 2 */;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+input[type="search"] {
+  -webkit-appearance: textfield /* 1 */;
+  box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+legend {
+  border: 0 /* 1 */;
+  padding: 0 /* 2 */;
+}
+textarea {
+  overflow: auto;
+}
+optgroup {
+  font-weight: bold;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+td,
+th {
+  padding: 0;
+}
+blockquote {
+  margin: 0;
+}
+@font-face {
+  font-family: 'SegoeUILight';
+  src: url("https://i.s-microsoft.com/fonts/Segoe-UI/Cyrillic/Light/latest.eot");
+  src: url("https://i.s-microsoft.com/fonts/Segoe-UI/Cyrillic/Light/latest.eot?#iefix") format('embedded-opentype'), url("https://i.s-microsoft.com/fonts/Segoe-UI/Cyrillic/Light/latest.woff") format('woff'), url("https://i.s-microsoft.com/fonts/Segoe-UI/Cyrillic/Light/latest.ttf") format('truetype'), url("https://i.s-microsoft.com/fonts/Segoe-UI/Cyrillic/Light/latest.svg#web") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SegoeUISemiLight';
+  src: url("https://i.s-microsoft.com/fonts/Segoe-UI/Cyrillic/SemiLight/latest.eot");
+  src: url("https://i.s-microsoft.com/fonts/Segoe-UI/Cyrillic/SemiLight/latest.eot?#iefix") format('embedded-opentype'), url("https://i.s-microsoft.com/fonts/Segoe-UI/Cyrillic/SemiLight/latest.woff") format('woff'), url("https://i.s-microsoft.com/fonts/Segoe-UI/Cyrillic/SemiLight/latest.ttf") format('truetype'), url("https://i.s-microsoft.com/fonts/Segoe-UI/Cyrillic/SemiLight/latest.svg#web") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SegoeUIBold';
+  src: url("https://i.s-microsoft.com/fonts/Segoe-UI/Cyrillic/Bold/latest.eot");
+  src: url("https://i.s-microsoft.com/fonts/Segoe-UI/Cyrillic/Bold/latest.eot?#iefix") format('embedded-opentype'), url("https://i.s-microsoft.com/fonts/Segoe-UI/Cyrillic/Bold/latest.woff") format('woff'), url("https://i.s-microsoft.com/fonts/Segoe-UI/Cyrillic/Bold/latest.ttf") format('truetype'), url("https://i.s-microsoft.com/fonts/Segoe-UI/Cyrillic/Bold/latest.svg#web") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SegoeUISemiBold';
+  src: url("https://i.s-microsoft.com/fonts/Segoe-UI/Cyrillic/SemiBold/latest.eot");
+  src: url("https://i.s-microsoft.com/fonts/Segoe-UI/Cyrillic/SemiBold/latest.eot?#iefix") format('embedded-opentype'), url("https://i.s-microsoft.com/fonts/Segoe-UI/Cyrillic/SemiBold/latest.woff") format('woff'), url("https://i.s-microsoft.com/fonts/Segoe-UI/Cyrillic/SemiBold/latest.ttf") format('truetype'), url("https://i.s-microsoft.com/fonts/Segoe-UI/Cyrillic/SemiBold/latest.svg#web") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SegoeUIRegular';
+  src: url("https://i.s-microsoft.com/fonts/Segoe-UI/Cyrillic/Normal/latest.eot");
+  src: url("https://i.s-microsoft.com/fonts/Segoe-UI/Cyrillic/Normal/latest.eot?#iefix") format('embedded-opentype'), url("https://i.s-microsoft.com/fonts/Segoe-UI/Cyrillic/Normal/latest.woff") format('woff'), url("https://i.s-microsoft.com/fonts/Segoe-UI/Cyrillic/Normal/latest.ttf") format('truetype'), url("https://i.s-microsoft.com/fonts/Segoe-UI/Cyrillic/Normal/latest.svg#web") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: "Segoe UI", "SegoeUIRegular", "Helvetica Neue", Arial, sans-serif;
+}
+font-size: 16px {
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+}
+.row {
+  max-width: 960px;
+  margin: 0 auto;
+}
+.topbar {
+  background-color: #fff;
+  height: 70px;
+  box-shadow: inset 0px -5px 0px 0px #eee;
+}
+.topbar__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 70px;
+}
+.topbar__share {
+  color: #b1b0b1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.share__text {
+  padding-right: 15px;
+}
+.share__link {
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=main.css.map */

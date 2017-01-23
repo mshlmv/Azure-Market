@@ -1,0 +1,12 @@
+mixin Topbar(data)
+  .topbar
+    .topbar__inner.row
+      a(href="/").topbar__logo
+        img(src="/static/img/assets/1_Topbar/Logo@2x.png", alt="Microsoft", width="94", height="20")
+      .topbar__share
+        .share__text Мы в социальных сетях:
+        .share__links
+          a(href="http://fb.com", target="_blank").share__link
+            != pugHelpers.Icon.call(locals, {iconName: 'fb'})
+          a(href="http://vk.com", target="_blank").share__link
+            != pugHelpers.Icon.call(locals, {iconName: 'vk'})
