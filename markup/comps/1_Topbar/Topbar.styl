@@ -2,8 +2,9 @@
   background-color: #fff
   height: 70px
   box-shadow: inset 0px -5px 0px 0px rgba(238,238,238,1)
-  +mq-size(phone-only)
-    padding: 0 20px
+  padding: 0 20px
+  +mq-size(desktop)
+    padding: 0
 
 .topbar__inner
   display: flex
@@ -16,18 +17,22 @@
   display: flex
 
 .share__text
-  padding-right: 15px
-  +mq-size(phone-only)
-    display: none
+  display: none
+  +mq-size(tablet)
+    padding-right: 15px
+    display: block
 
 .share__link
   text-decoration: none
 
 .icon__fb,
 .icon__vk
-  +mq-size(phone-only)
-    width: 28px
-    height: 28px
+  width: 28px
+  height: 28px
+  +mq-size(tablet)
+    width: 22px
+    height: 22px
 .icon__fb
-  +mq-size(phone-only)
-    padding-right: 10px
+  padding-right: 10px
+  +mq-size(tablet)
+    padding-right: 0

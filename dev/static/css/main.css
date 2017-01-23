@@ -226,10 +226,11 @@ font-size: 16px {
   background-color: #fff;
   height: 70px;
   box-shadow: inset 0px -5px 0px 0px #eee;
+  padding: 0 20px;
 }
-@media (max-width: 599px) {
+@media (min-width: 992px) {
   .topbar {
-    padding: 0 20px;
+    padding: 0;
   }
 }
 .topbar__inner {
@@ -251,26 +252,92 @@ font-size: 16px {
   display: flex;
 }
 .share__text {
-  padding-right: 15px;
+  display: none;
 }
-@media (max-width: 599px) {
+@media (min-width: 768px) {
   .share__text {
-    display: none;
+    padding-right: 15px;
+    display: block;
   }
 }
 .share__link {
   text-decoration: none;
 }
-@media (max-width: 599px) {
+.icon__fb,
+.icon__vk {
+  width: 28px;
+  height: 28px;
+}
+@media (min-width: 768px) {
   .icon__fb,
   .icon__vk {
-    width: 28px;
-    height: 28px;
+    width: 22px;
+    height: 22px;
   }
 }
-@media (max-width: 599px) {
+.icon__fb {
+  padding-right: 10px;
+}
+@media (min-width: 768px) {
   .icon__fb {
-    padding-right: 10px;
+    padding-right: 0;
+  }
+}
+.banner {
+  background-image: url("../img/assets/2_Banner/cloud.svg"), url("../img/assets/2_Banner/cloud.svg");
+  background-position: calc(100% + 150px) bottom, -150px 10%;
+  background-repeat: no-repeat;
+  background-size: calc(530px / 2) calc(345px / 2);
+  background-color: #00bbf1;
+}
+@media (min-width: 992px) {
+  .banner {
+    height: 550px;
+    background-image: url("../img/assets/2_Banner/radial-gradient.png"), url("../img/assets/2_Banner/cloud.svg"), url("../img/assets/2_Banner/cloud.svg");
+    background-position: bottom center, -110px 85px, calc(100% + 160px) 170px;
+    background-repeat: no-repeat;
+    background-blend-mode: screen, normal, normal;
+    background-size: auto, 530px 345px, 530px 345px;
+    background-color: #00bbf1;
+  }
+}
+.banner__inner {
+  padding: 30px 20px;
+}
+@media (min-width: 992px) {
+  .banner__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 550px;
+    padding: 0;
+  }
+}
+.banner__text {
+  color: #fff;
+  max-width: 470px;
+}
+.banner__text h1 {
+  font-size: 34px;
+  font-weight: 200;
+  font-family: "SegoeUILight";
+}
+.banner__text p {
+  font-size: 16px;
+  line-height: 1.3;
+}
+.banner__image {
+  display: none;
+}
+@media (min-width: 992px) {
+  .banner__image {
+    display: block;
   }
 }
 

@@ -27,18 +27,15 @@ m-blocks-justify()
 // You can add your own mixins here:
 
 mq-size($size)
-  if $size == phone-only
-    @media (max-width: 599px)
+  if $size == phone
+    @media (min-width: 576px)
       {block}
-  else if $size == tablet-portrait-up
-    @media (min-width: 600px)
+  else if $size == tablet
+    @media (min-width: 768px)
       {block}
-  else if $size == tablet-landscape-up
-    @media (min-width: 900px)
+  else if $size == desktop
+    @media (min-width: 992px)
       {block}
-  else if $size == desktop-up
+  else if $size == lg-desktop
     @media (min-width: 1200px)
-      {block}
-  else if $size == big-desktop-up
-    @media (min-width: 1800px)
       {block}
