@@ -1,16 +1,23 @@
-.favor__inner
-  padding: 0 20px
+.favor
   +mq-size(desktop)
-    padding: 0
+    background-image: url(../img/assets/3_Favor/cloud.svg), url(../img/assets/3_Favor/cloud.svg)
+    background-size: 690px 505px
+    background-position -370px 90px, calc(100% + 330px) 185px
+    background-repeat: no-repeat
+
+
+
+.favor__inner
+  padding: 30px 20px
+  +mq-size(desktop)
+    padding: 60px 0
 
 .favor h1
   font-family: "SegoeUILight"
   font-size: $h1-size-phone
   text-align: center
-  margin-top: 30px
   +mq-size(desktop)
     font-size: $h1-size-desktop
-    margin-top: 60px
 
 .favor__grid
   display: flex

@@ -354,24 +354,30 @@ h1 {
     display: block;
   }
 }
+@media (min-width: 992px) {
+  .favor {
+    background-image: url("../img/assets/3_Favor/cloud.svg"), url("../img/assets/3_Favor/cloud.svg");
+    background-size: 690px 505px;
+    background-position: -370px 90px, calc(100% + 330px) 185px;
+    background-repeat: no-repeat;
+  }
+}
 .favor__inner {
-  padding: 0 20px;
+  padding: 30px 20px;
 }
 @media (min-width: 992px) {
   .favor__inner {
-    padding: 0;
+    padding: 60px 0;
   }
 }
 .favor h1 {
   font-family: "SegoeUILight";
   font-size: 34px;
   text-align: center;
-  margin-top: 30px;
 }
 @media (min-width: 992px) {
   .favor h1 {
     font-size: 48px;
-    margin-top: 60px;
   }
 }
 .favor__grid {
