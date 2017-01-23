@@ -1,2 +1,9 @@
 mixin Howbuy(data)
-    .Howbuy
+  .howbuy
+    .howbuy__inner.row
+      h1 Как приобрести решение?
+      ul.steps__list
+        for item in data['step']
+          li.steps__item
+            .steps__num= item.num
+            .steps__text!= item.txt

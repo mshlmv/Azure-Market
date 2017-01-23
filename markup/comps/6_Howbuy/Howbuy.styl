@@ -1,0 +1,60 @@
+.howbuy
+  margin-top: 95px
+  h1
+    text-align: center
+
+.steps__list
+  list-style: none
+  margin: 80px 0 140px 0
+  padding: 0 20px
+  display: flex
+  flex-flow: column
+  +mq-size(tablet)
+    padding: 0
+    flex-flow: row
+
+.steps__item
+  margin-bottom: 20px
+  text-align: left
+  display: flex
+  align-items: center
+  +mq-size(tablet)
+    text-align: center
+    flex-flow: column
+    flex: 1 1 10em
+
+.steps__num
+  font-size: 48px
+  font-family: "SegoeUISemiBold"
+  color: #fff
+  width: 80px
+  height: @width
+  background-color: $light-blue-color
+  border-radius: 50%
+  text-align: center
+  line-height: 78px
+  position: relative
+  &::after
+    background-color: $light-blue-color
+    content: ' '
+    display: block
+    position: absolute
+    width: 2px
+    height: 100%
+    left: 50%
+    z-index: -1
+  +mq-size(tablet)
+    &::after
+      width: 200%
+      height: 2px
+      top: 50%
+      right: -200%
+.steps__item:last-child
+  .steps__num::after
+    display: none
+
+.steps__text
+  margin-left: 20px
+  font-family: "SegoeUISemiLight", Arial, sans-serif
+  +mq-size(desktop)
+    margin-top: 20px
