@@ -1,0 +1,10 @@
+mixin Favor(data)
+  .favor
+    .favor__inner.row
+      h1 Избранные решения Azure Marketplace
+      .favor__grid
+        for item in data['favor']
+          .grid__item
+            .item__image
+              img(src=item.src)
+            .item__text= item.text

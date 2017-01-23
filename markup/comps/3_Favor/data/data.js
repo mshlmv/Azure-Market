@@ -1,10 +1,4 @@
-'Topbar': {
-  defaults: {
-  }
-}
-,
-
-'Favor': {
+Favor: {
   favor: [
     {
       src: 'static/img/assets/3_Favor/wowza.png',
@@ -40,23 +34,3 @@
     }
   ]
 }
-,
-
-__iconsData: {
-    
-        'fb': {
-            width: '22px',
-            height: '22px'
-        },
-    
-        'vk': {
-            width: '22px',
-            height: '22px'
-        },
-    
-},
-
-__pages: [{
-                name: 'index',
-                href: 'index.html'
-             }]

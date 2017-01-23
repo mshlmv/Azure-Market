@@ -1,0 +1,61 @@
+.favor__inner
+  padding: 0 20px
+  +mq-size(desktop)
+    padding: 0
+
+.favor h1
+  font-family: "SegoeUILight"
+  font-size: $h1-size-phone
+  text-align: center
+  margin-top: 30px
+  +mq-size(desktop)
+    font-size: $h1-size-desktop
+    margin-top: 60px
+
+.favor__grid
+  display: flex
+  flex-flow: row wrap
+  justify-content: space-between
+
+.grid__item
+  cursor: pointer
+  width: 140px
+  margin-top: 30px
+  +mq-size(tablet)
+    width: 200px
+    margin-top: 60px
+
+.item__image
+  display: flex
+  justify-content: center
+  align-items: center
+  width: 100px
+  height: 60px
+  padding: 0 10px
+  border: 3px solid #d7d7d7
+  img
+    width: 100%
+    height: auto
+  +mq-size(tablet)
+    width: 200px
+    height: 120px
+.item__image img
+  filter: url("data:image/svg+xml;utf8,&lt;svg xmlns=\'http://www.w3.org/2000/svg\'&gt;&lt;filter id=\'grayscale\'&gt;&lt;feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/&gt;&lt;/filter&gt;&lt;/svg&gt;#grayscale")
+  filter: grayscale(1)
+  +mq-size(tablet)
+    width: auto
+    height: auto
+
+.item__text
+  font-size: 16px
+  +mq-size(tablet)
+    font-size: 22px
+
+.grid__item:hover
+  > .item__text
+    color: $acent-color
+  > .item__image
+    border: 3px solid $acent-color
+  > .item__image img
+    filter: url("data:image/svg+xml;utf8,&lt;svg xmlns=\'http://www.w3.org/2000/svg\'&gt;&lt;filter id=\'grayscale\'&gt;&lt;feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/&gt;&lt;/filter&gt;&lt;/svg&gt;#grayscale")
+    filter: grayscale(0)

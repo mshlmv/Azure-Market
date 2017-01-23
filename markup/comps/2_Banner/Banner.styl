@@ -29,12 +29,16 @@
   color: #fff
   max-width: 470px
   h1
-    font-size: 34px
+    font-size: $h1-size-phone
     font-weight: 200
     font-family: "SegoeUILight"
+    +mq-size(desktop)
+      font-size: $h1-size-desktop
   p
-    font-size: 16px
+    font-size: $p-size-phone
     line-height: 1.3
+    +mq-size(desktop)
+      font-size: $p-size-desktop
 
 .banner__image
   display: none
